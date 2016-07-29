@@ -12,6 +12,7 @@ import butterknife.ButterKnife;
  */
 public abstract class BaseAppActivity extends AppCompatActivity{
 
+	protected String TAG = "TAG";
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
