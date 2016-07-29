@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 /**
  * Created by tikt on 16-7-29.
  */
-public interface LocalRequestTest {
+public interface LocalRequestWithPar {
 
 	@GET("webservlet/ServletTest")
 	Call<Repo> listRepos();

@@ -11,8 +11,11 @@
 
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_mainActivity_loclaServlet_btn"
-            android:text="访问本地服务器的servlet"/>
+            android:id="@+id/id_mainActivity_loclaServlet_noPar_btn"
+            android:text="无参Get访问本地服务器的servlet"/>
 
-
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_mainActivity_loclaServlet_Par_btn"
+            android:text="带参Get访问本地服务器的servlet"/>
 </LinearLayout>
