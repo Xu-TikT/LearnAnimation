@@ -3,6 +3,7 @@ package com.tikt.mathmeetsanimation.base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import butterknife.ButterKnife;
 
@@ -73,6 +74,13 @@ public abstract class BaseAppActivity extends AppCompatActivity{
 	 * 销毁时的操作
 	 */
 	protected abstract void dealWithDestroy();
+
+
+	protected void showToast(String msg){
+		Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+	}
+
+
 
 	@Override
 	protected void onDestroy() {

@@ -18,4 +18,20 @@
             android:layout_height="wrap_content"
             android:id="@+id/id_mainActivity_loclaServlet_Par_btn"
             android:text="带参Get访问本地服务器的servlet"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_mainActivity_loclaServlet_noPar2_btn"
+            android:text="无参Get利用函数参数修改url\n访问本地服务器的servlet"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_mainActivity_loclaServlet_Par2_btn"
+            android:text="带参Get利用函数提交参数\n访问本地服务器的servlet"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_mainActivity_loclaServlet_ParMap_btn"
+            android:text="带参Get利用函数提交复杂参数\n访问本地服务器的servlet"/>
+
 </LinearLayout>

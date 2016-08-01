@@ -32,10 +32,10 @@ public interface RetrofitTest {
 	 *   \@GET("/group/{id}/users") //注意 字符串id
 	 *    List<User> groupList(@Path("id") int groupId); //注意 Path注解的参数要和前面的字符串一样 id
 	 *
-	 * 还支持查询参数:
+	 * 还支持在函数中提交参数:
 	 *   \@GET("/group/{id}/users")
 	 *    List<User> groupList(@Path("id") int groupId, @Query("sort") String sort);
-	 *    复杂的参数查询可以使用map:
+	 *    复杂的参数可以使用map:
 	 *   \@GET("group/{id}/users")
 	 *    Call<List<User>> groupList(@Path("id") int groupId, @QueryMap Map<String, String> options);
 	 *

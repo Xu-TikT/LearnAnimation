@@ -5,13 +5,13 @@ package com.tikt.mathmeetsanimation.entity;
  */
 public class Repo{
 
-	public String getUsername() {
-		return username;
+	public String getResponse() {
+		return response;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setResponse(String response) {
+		this.response = response;
 	}
 
-	String username;
+	String response;
 }
