@@ -15,3 +15,41 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+
+#-keepattributes InnerClasses
+-dontoptimize
+-dontpreverify
+-dontshrink #不压缩输入的类文件
+#-dontwarn android.support.v4.**
+
+-keep class com.tikt.mathmeetsanimation.entity.**{ *; }
+
+
+
+-dontwarn okio.**
+#==================Gson Start==========================
+-dontwarn com.google.**
+-keep class com.google.gson.** {*;}
+##表示对注解中的参数进行保留
+-keepattributes *Annotation*
+# Gson specific classes
+-keep class sun.misc.Unsafe { *; }
+
+##-------------butterknife START--------------##
+ -dontwarn butterknife.internal.**
+ -keep class **$$ViewInjector { *; }
+ -keepnames class * { @butterknife.InjectView *;}
+##-------------butterknife END--------------##
+
+
+#==================Retrofit Start==========================
+# Platform calls Class.forName on types which do not exist on Android to determine platform.
+-dontnote retrofit2.Platform
+# Platform used when running on RoboVM on iOS. Will not be used at runtime.
+-dontnote retrofit2.Platform$IOS$MainThreadExecutor
+# Platform used when running on Java 8 VMs. Will not be used at runtime.
+-dontwarn retrofit2.Platform$Java8
+# Retain generic type information for use by reflection by converters and adapters.
+-keepattributes Signature
+# Retain declared checked exceptions for use by a Proxy instance.
+-keepattributes Exceptions

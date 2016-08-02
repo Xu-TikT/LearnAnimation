@@ -1,5 +1,6 @@
 package com.tikt.mathmeetsanimation.base;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -80,7 +81,45 @@ public abstract class BaseAppActivity extends AppCompatActivity{
 		Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
 	}
 
+	/**
+	 *无bundle跳转Activity
+	 * @param targetActivity
+	 */
+	protected void onStartActivity( Class<?> targetActivity){
+		Intent intent = new Intent(this,targetActivity);
+		startActivity(intent);
 
+	}
+	/**
+	 *带bundle跳转Activity
+	 * @param targetActivity
+	 */
+	protected void onStartActivity( Class<?> targetActivity,Bundle bundle){
+		Intent intent = new Intent(this,targetActivity);
+		intent.putExtras(bundle);
+		startActivity(intent);
+
+	}
+
+	/**
+	 *无bundle跳转Activity,并接收返回值
+	 * @param targetActivity
+	 */
+	protected void onStartActivityForResult( Class<?> targetActivity,int requestCode){
+		Intent intent = new Intent(this,targetActivity);
+		startActivityForResult(intent,requestCode);
+
+	}
+	/**
+	 *带bundle跳转Activity,并接收返回值
+	 * @param targetActivity
+	 */
+	protected void onStartActivityForResult( Class<?> targetActivity,Bundle bundle,int requestCode){
+		Intent intent = new Intent(this,targetActivity);
+		intent.putExtras(bundle);
+		startActivityForResult(intent,requestCode);
+
+	}
 
 	@Override
 	protected void onDestroy() {
