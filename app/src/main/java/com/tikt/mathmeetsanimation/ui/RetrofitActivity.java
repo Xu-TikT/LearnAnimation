@@ -13,6 +13,7 @@ import com.tikt.mathmeetsanimation.retrofitInterface.GetLocalRequestWithPar2;
 import com.tikt.mathmeetsanimation.retrofitInterface.GetLocalRequestWithParMap;
 import com.tikt.mathmeetsanimation.retrofitInterface.GetLocalRequestWithoutPar;
 import com.tikt.mathmeetsanimation.retrofitInterface.GetLocalRequestWithoutPar2;
+import com.tikt.mathmeetsanimation.retrofitInterface.PostLocalRequestWithoutPar;
 import com.tikt.mathmeetsanimation.retrofitInterface.ResultOfNetwork;
 
 import java.util.HashMap;
@@ -32,6 +33,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitActivity extends BaseNetworkActivity implements ResultOfNetwork {
 
+	@Bind(R.id.id_retrofitActivity_loclaServlet_noPar_post_btn)
+	Button idretrofitActivityLoclaServletPostBtn;
 	@Bind(R.id.id_retrofitActivity_loclaServlet_noPar_btn)
 	Button idretrofitActivityLoclaServletBtn;
 	@Bind(R.id.id_retrofitActivity_loclaServlet_Par_btn)
@@ -81,7 +84,7 @@ public class RetrofitActivity extends BaseNetworkActivity implements ResultOfNet
 
 	@OnClick({R.id.id_retrofitActivity_loclaServlet_noPar_btn, R.id.id_retrofitActivity_loclaServlet_Par_btn,
 			R.id.id_retrofitActivity_loclaServlet_noPar2_btn,R.id.id_retrofitActivity_loclaServlet_Par2_btn,
-			R.id.id_retrofitActivity_loclaServlet_ParMap_btn})
+			R.id.id_retrofitActivity_loclaServlet_ParMap_btn,R.id.id_retrofitActivity_loclaServlet_noPar_post_btn})
 	public void onClick(View view) {
 		switch (view.getId()) {
 
@@ -100,7 +103,9 @@ public class RetrofitActivity extends BaseNetworkActivity implements ResultOfNet
 			case R.id.id_retrofitActivity_loclaServlet_ParMap_btn:
 				onGetRetrofitWithParamsMap();
 				break;
-
+			case R.id.id_retrofitActivity_loclaServlet_noPar_post_btn:
+				onPostRetrofitWithoutParams();
+				break;
 		}
 
 
@@ -246,7 +251,32 @@ public class RetrofitActivity extends BaseNetworkActivity implements ResultOfNet
 			}
 		});
 	}
+	/**
+	 * 无参Post请求
+	 */
+	private void onPostRetrofitWithoutParams() {
+		PostLocalRequestWithoutPar service = retrofit.create(PostLocalRequestWithoutPar.class);
+		Call<Repo> repoCall = service.listRepos();
+		Log.i(TAG, "initEvent: repoCall.request().url()==" + repoCall.request().url());
 
+		repoCall.enqueue(new Callback<Repo>() {
+			@Override
+			public void onResponse(Call<Repo> call, Response<Repo> response) {
+
+				Log.i(TAG, "onResponse: ==");
+				Log.i(TAG, "onResponse: getResponse==" + response.body().getResponse());
+				showToast(response.body().getResponse());
+
+			}
+
+			@Override
+			public void onFailure(Call<Repo> call, Throwable t) {
+
+				Log.i(TAG, "onFailure: ==");
+
+			}
+		});
+	}
 	@Override
 	public void onSuccess(Response result) {
 

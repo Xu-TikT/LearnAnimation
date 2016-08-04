@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context="com.tikt.mathmeetsanimation.MainActivity">
 
@@ -14,4 +14,8 @@
             android:id="@+id/id_mainActivity_retrofit_btn"
             android:text="Retrofit Test"/>
 
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_mainActivity_animation_btn"
+            android:text="Animation Test"/>
 </LinearLayout>

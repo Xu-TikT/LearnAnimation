@@ -20,6 +20,20 @@
         </activity>
         <activity android:name=".ui.RetrofitActivity">
         </activity>
+        <activity android:name=".ui.animation.AnimationActivity">
+        </activity>
+        <activity android:name=".ui.animation.frame.FrameAnimationActivity">
+        </activity>
+        <activity android:name=".ui.animation.tween.TweenRotateActivity">
+        </activity>
+        <activity android:name=".ui.animation.tween.TweenAlphaActivity">
+        </activity>
+        <activity android:name=".ui.animation.tween.TweenTranslateActivity">
+        </activity>
+        <activity android:name=".ui.animation.tween.TweenScaleActivity">
+        </activity>
+        <activity android:name=".ui.animation.tween.TweenSetActivity">
+        </activity>
     </application>
 
 </manifest>

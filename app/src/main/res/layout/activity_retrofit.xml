@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     android:layout_height="match_parent"
     tools:context="com.tikt.mathmeetsanimation.ui.RetrofitActivity">
 
@@ -34,5 +34,8 @@
             android:id="@+id/id_retrofitActivity_loclaServlet_ParMap_btn"
             android:text="带参Get利用函数提交复杂参数\n访问本地服务器的servlet"/>
 
-
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_retrofitActivity_loclaServlet_noPar_post_btn"
+            android:text="无参Post访问本地服务器的servlet"/>
 </LinearLayout>

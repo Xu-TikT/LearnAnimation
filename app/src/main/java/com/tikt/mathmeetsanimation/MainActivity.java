@@ -4,12 +4,15 @@ import android.view.View;
 import android.widget.Button;
 
 import com.tikt.mathmeetsanimation.base.BaseAppActivity;
+import com.tikt.mathmeetsanimation.ui.animation.AnimationActivity;
 import com.tikt.mathmeetsanimation.ui.RetrofitActivity;
 
 import butterknife.Bind;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseAppActivity {
+	@Bind(R.id.id_mainActivity_animation_btn)
+	Button idMainActivityAnimationBtn;
 	@Bind(R.id.id_mainActivity_retrofit_btn)
 	Button idMainActivityRetrofitBtn;
 
@@ -48,15 +51,17 @@ public class MainActivity extends BaseAppActivity {
 
 	}
 
-	@OnClick({R.id.id_mainActivity_retrofit_btn})
+	@OnClick({R.id.id_mainActivity_retrofit_btn,R.id.id_mainActivity_animation_btn})
 	public void onClick(View view) {
 		switch (view.getId()){
 
 			case R.id.id_mainActivity_retrofit_btn:
-				showToast("onClick");
-					onStartActivity(RetrofitActivity.class);
+//				showToast("onClick");
+				onStartActivity(RetrofitActivity.class);
 				break;
-
+			case R.id.id_mainActivity_animation_btn:
+				onStartActivity(AnimationActivity.class);
+				break;
 
 		}
 

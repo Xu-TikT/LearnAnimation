@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_616775"
+    tools:context=".ui.animation.tween.TweenRotateActivity">
+
+
+
+<Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tweenRotateActivity_start_btn"
+        android:text="动画开始" android:layout_alignTop="@+id/id_tweenRotateActivity_stop_btn"
+        android:layout_toStartOf="@+id/id_tweenRotateActivity_reset_btn" android:layout_marginEnd="29dp"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_tweenRotateActivity_stop_btn"
+            android:text="动画停止" android:layout_above="@+id/id_tweenRotateActivity_reset_btn"
+            android:layout_toEndOf="@+id/id_tweenRotateActivity_reset_btn"
+            android:layout_marginStart="30dp" android:layout_marginBottom="73dp"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_tweenRotateActivity_reset_btn"
+            android:text="动画重置" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="28dp"/>
+
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/id_tweenRotateActivity_animView"
+               android:background="@mipmap/icon"
+               android:layout_above="@+id/id_tweenRotateActivity_start_btn"
+               android:layout_centerHorizontal="true" android:layout_marginBottom="144dp"/>
+
+
+
+</RelativeLayout>
