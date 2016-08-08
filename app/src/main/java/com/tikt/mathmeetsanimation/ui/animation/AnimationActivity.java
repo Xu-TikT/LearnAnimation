@@ -7,9 +7,11 @@ import com.tikt.mathmeetsanimation.R;
 import com.tikt.mathmeetsanimation.base.BaseAppActivity;
 import com.tikt.mathmeetsanimation.ui.animation.frame.FrameAnimationActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenAlphaActivity;
+import com.tikt.mathmeetsanimation.ui.animation.tween.TweenInterpolatorActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenRotateActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenScaleActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenSetActivity;
+import com.tikt.mathmeetsanimation.ui.animation.tween.TweenSetWithCodeActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenTranslateActivity;
 
 import butterknife.Bind;
@@ -21,6 +23,10 @@ import butterknife.OnClick;
  */
 public class AnimationActivity extends BaseAppActivity {
 
+	@Bind(R.id.id_animationActivity_tween_set_code_btn)
+	Button idAnimationActivityTweenSetWithCodeBtn;
+	@Bind(R.id.id_animationActivity_tween_interpolator_btn)
+	Button idAnimationActivityTweenInterpolatorBtn;
 	@Bind(R.id.id_animationActivity_tween_set_btn)
 	Button idAnimationActivityTweenSetBtn;
 	@Bind(R.id.id_animationActivity_tween_scale_btn)
@@ -70,7 +76,9 @@ public class AnimationActivity extends BaseAppActivity {
 			R.id.id_animationActivity_tween_alpha_btn,
 			R.id.id_animationActivity_tween_translate_btn,
 			R.id.id_animationActivity_tween_scale_btn,
-			R.id.id_animationActivity_tween_set_btn})
+			R.id.id_animationActivity_tween_set_btn,
+			R.id.id_animationActivity_tween_interpolator_btn,
+			R.id.id_animationActivity_tween_set_code_btn})
 	public void onClick(View view) {
 
 		switch (view.getId()) {
@@ -91,6 +99,12 @@ public class AnimationActivity extends BaseAppActivity {
 				break;
 			case R.id.id_animationActivity_tween_set_btn:
 				onStartActivity(TweenSetActivity.class);
+				break;
+			case R.id.id_animationActivity_tween_interpolator_btn:
+				onStartActivity(TweenInterpolatorActivity.class);
+				break;
+			case R.id.id_animationActivity_tween_set_code_btn:
+				onStartActivity(TweenSetWithCodeActivity.class);
 				break;
 		}
 

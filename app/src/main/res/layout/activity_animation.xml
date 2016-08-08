@@ -1,36 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".ui.animation.AnimationActivity">
 
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/id_animationActivity_frame_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_animationActivity_frame_btn"
             android:text="Frame Animation"/>
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/id_animationActivity_tween_rotate_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_animationActivity_tween_rotate_btn"
             android:text="Tween Rotate"/>
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/id_animationActivity_tween_alpha_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_animationActivity_tween_alpha_btn"
             android:text="Tween Alpha"/>
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/id_animationActivity_tween_translate_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_animationActivity_tween_translate_btn"
             android:text="Tween Translate"/>
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/id_animationActivity_tween_scale_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_animationActivity_tween_scale_btn"
 
             android:text="Tween Scale"/>
-    <Button android:layout_width="wrap_content"
+    <Button android:id="@+id/id_animationActivity_tween_set_btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_animationActivity_tween_set_btn"
             android:text="Tween Set"/>
+
+    <Button android:id="@+id/id_animationActivity_tween_interpolator_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tween Interpolator"/>
+    <Button android:id="@+id/id_animationActivity_tween_set_code_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tween Set With Code"/>
 </LinearLayout>
