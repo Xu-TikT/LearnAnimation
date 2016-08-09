@@ -38,6 +38,14 @@
         </activity>
         <activity android:name=".ui.animation.tween.TweenSetWithCodeActivity">
         </activity>
+        <activity android:name=".ui.animation.property.PropertyActivity">
+        </activity>
+        <activity android:name=".ui.animation.property.ValueAnimatorActivity">
+        </activity>
+        <activity android:name=".ui.animation.property.ObjectAnimatorActivity">
+        </activity>
+        <activity android:name=".ui.animation.property.AnimatorSetActivity">
+        </activity>
     </application>
 
 </manifest>

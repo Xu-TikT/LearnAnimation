@@ -6,6 +6,7 @@ import android.widget.Button;
 import com.tikt.mathmeetsanimation.R;
 import com.tikt.mathmeetsanimation.base.BaseAppActivity;
 import com.tikt.mathmeetsanimation.ui.animation.frame.FrameAnimationActivity;
+import com.tikt.mathmeetsanimation.ui.animation.property.PropertyActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenAlphaActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenInterpolatorActivity;
 import com.tikt.mathmeetsanimation.ui.animation.tween.TweenRotateActivity;
@@ -23,6 +24,8 @@ import butterknife.OnClick;
  */
 public class AnimationActivity extends BaseAppActivity {
 
+	@Bind(R.id.id_animationActivity_property_btn)
+	Button idAnimationActivityPropertyBtn;
 	@Bind(R.id.id_animationActivity_tween_set_code_btn)
 	Button idAnimationActivityTweenSetWithCodeBtn;
 	@Bind(R.id.id_animationActivity_tween_interpolator_btn)
@@ -78,7 +81,8 @@ public class AnimationActivity extends BaseAppActivity {
 			R.id.id_animationActivity_tween_scale_btn,
 			R.id.id_animationActivity_tween_set_btn,
 			R.id.id_animationActivity_tween_interpolator_btn,
-			R.id.id_animationActivity_tween_set_code_btn})
+			R.id.id_animationActivity_tween_set_code_btn,
+			R.id.id_animationActivity_property_btn})
 	public void onClick(View view) {
 
 		switch (view.getId()) {
@@ -105,6 +109,9 @@ public class AnimationActivity extends BaseAppActivity {
 				break;
 			case R.id.id_animationActivity_tween_set_code_btn:
 				onStartActivity(TweenSetWithCodeActivity.class);
+				break;
+			case R.id.id_animationActivity_property_btn:
+				onStartActivity(PropertyActivity.class);
 				break;
 		}
 
