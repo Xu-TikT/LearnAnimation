@@ -20,6 +20,8 @@ public class PropertyActivity extends BaseAppActivity {
 	Button idValueAnimatorActivityBtn;
 	@Bind(R.id.id_ObjectAnimatorActivity_onStartBtn)
 	Button idObjectAnimatorActivityBtn;
+	@Bind(R.id.id_ObjectAnimatorSetActivity_onStartBtn)
+	Button idObjectAnimatorSetActivityBtn;
 
 	@Override
 	protected int getContentViewLayoutID() {
@@ -52,7 +54,8 @@ public class PropertyActivity extends BaseAppActivity {
 	}
 
 
-	@OnClick({R.id.id_ValueAnimatorActivity_onStartBtn, R.id.id_ObjectAnimatorActivity_onStartBtn})
+	@OnClick({R.id.id_ValueAnimatorActivity_onStartBtn, R.id.id_ObjectAnimatorActivity_onStartBtn,
+			R.id.id_ObjectAnimatorSetActivity_onStartBtn})
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.id_ValueAnimatorActivity_onStartBtn:
@@ -60,6 +63,9 @@ public class PropertyActivity extends BaseAppActivity {
 				break;
 			case R.id.id_ObjectAnimatorActivity_onStartBtn:
 				onStartActivity(ObjectAnimatorActivity.class);
+				break;
+			case R.id.id_ObjectAnimatorSetActivity_onStartBtn:
+				onStartActivity(AnimatorSetActivity.class);
 				break;
 		}
 	}

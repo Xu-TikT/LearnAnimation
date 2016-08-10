@@ -8,6 +8,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/main_616775"
     tools:context="com.tikt.mathmeetsanimation.ui.animation.property.AnimatorSetActivity">
 
+
+    <ImageView android:id="@+id/id_animatorSetActivity_img"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@mipmap/icon" android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true" android:layout_marginTop="171dp"/>
+
+    <Button android:id="@+id/id_animatorSetActivity_start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动画开始" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="102dp"/>
 </RelativeLayout>

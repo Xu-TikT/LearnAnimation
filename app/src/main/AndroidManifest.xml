@@ -46,6 +46,10 @@
         </activity>
         <activity android:name=".ui.animation.property.AnimatorSetActivity">
         </activity>
+        <activity android:name=".ui.animation.property.AnimatorSetXmlActivity">
+        </activity>
+        <activity android:name=".ui.ImgTestActivity">
+        </activity>
     </application>
 
 </manifest>

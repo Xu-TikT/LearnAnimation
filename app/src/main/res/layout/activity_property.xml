@@ -22,5 +22,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/id_ObjectAnimatorActivity_onStartBtn"
             android:text="ObjectAnimator"/>
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_ObjectAnimatorSetActivity_onStartBtn"
+            android:text="AnimatorSet"/>
 
 </LinearLayout>
