@@ -50,6 +50,8 @@
         </activity>
         <activity android:name=".ui.ImgTestActivity">
         </activity>
+        <activity android:name=".ui.mvpdemo.MVPDemoActivity">
+        </activity>
     </application>
 
 </manifest>
