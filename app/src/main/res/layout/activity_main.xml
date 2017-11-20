@@ -26,4 +26,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/id_mainActivity_MVPDemo_btn"
             android:text="MVPDemo Test"/>
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_mainActivity_CustomizeViews_btn"
+        android:text="CustomizeViews"/>
 </LinearLayout>
