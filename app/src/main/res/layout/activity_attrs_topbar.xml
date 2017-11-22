@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tikt.mathmeetsanimation.ui.customizeView.views.AttrsTopbarActivity">
+
+    <com.tikt.mathmeetsanimation.ui.customizeView.views.MyTopbar
+        android:layout_width="match_parent"
+        android:id="@+id/id_attrsTopbar_view"
+        app:leftBackground="@color/colorPrimary"
+        app:leftTextColor="@color/black"
+        app:leftText="Back"
+        app:rightBackground="@color/colorPrimary"
+        app:rightTextColor="@color/black"
+        app:rightText="More"
+        app:title="This is Title"
+        app:titleTextSize="18sp"
+        android:layout_height="100dp">
+
+    </com.tikt.mathmeetsanimation.ui.customizeView.views.MyTopbar>
+
+<include layout="@layout/topbar"/>
+
+</LinearLayout>

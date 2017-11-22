@@ -35,7 +35,8 @@
         <activity android:name=".ui.ImgTestActivity" />
         <activity android:name=".ui.mvpdemo.MVPDemoActivity" />
         <activity android:name=".ui.customizeView.CustomizeViewsActivity" />
-        <activity android:name=".ui.customizeView.TextView_1_Activity"></activity>
+        <activity android:name=".ui.customizeView.TextView_1_Activity" />
+        <activity android:name=".ui.customizeView.views.AttrsTopbarActivity"></activity>
     </application>
 
 </manifest>

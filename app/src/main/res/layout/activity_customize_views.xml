@@ -16,6 +16,11 @@
         android:text="TextView Test"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/id_customizeViews_attrsTopbar_1_btn"
+        android:text="AttrsTopBar Test"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
