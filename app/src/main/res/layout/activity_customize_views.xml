@@ -22,5 +22,10 @@
         android:text="AttrsTopBar Test"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/id_customizeViews_canvas_btn"
+        android:text="Canvas Test"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

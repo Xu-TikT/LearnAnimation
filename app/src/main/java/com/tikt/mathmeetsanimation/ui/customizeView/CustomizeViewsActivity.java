@@ -22,6 +22,8 @@ public class CustomizeViewsActivity extends BaseAppActivity {
     Button idCustomizeViewsTextview1Btn;
     @Bind(R.id.id_customizeViews_attrsTopbar_1_btn)
     Button idCustomizeViewsAttrsTopbarBtn;
+    @Bind(R.id.id_customizeViews_canvas_btn)
+    Button idCustomizeViewsCanvasBtn;
 
     @Override
     protected int getContentViewLayoutID() {
@@ -60,7 +62,8 @@ public class CustomizeViewsActivity extends BaseAppActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.id_customizeViews_textview_1_btn,R.id.id_customizeViews_attrsTopbar_1_btn})
+    @OnClick({R.id.id_customizeViews_textview_1_btn,R.id.id_customizeViews_attrsTopbar_1_btn
+            ,R.id.id_customizeViews_canvas_btn})
     public void onViewClicked(View view) {
         switch (view.getId()){
             case R.id.id_customizeViews_textview_1_btn:
@@ -71,6 +74,10 @@ public class CustomizeViewsActivity extends BaseAppActivity {
             case R.id.id_customizeViews_attrsTopbar_1_btn:
 
                 onStartActivity(AttrsTopbarActivity.class);
+                break;
+            case R.id.id_customizeViews_canvas_btn:
+
+                onStartActivity(CanvasActivity.class);
                 break;
         }
 

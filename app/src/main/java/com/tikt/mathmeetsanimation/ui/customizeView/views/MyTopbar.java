@@ -2,6 +2,7 @@ package com.tikt.mathmeetsanimation.ui.customizeView.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -14,6 +15,7 @@ import com.tikt.mathmeetsanimation.R;
 
 /**
  * Created by tikt on 17-11-22.
+ *
  */
 
 public class MyTopbar extends RelativeLayout{
@@ -71,7 +73,7 @@ public class MyTopbar extends RelativeLayout{
         //recycle 方法来完成资源的回收,避免重新创建的时候的错误
         ta.recycle();
 
-        initView();
+//        initView();
     }
 
     private void initView(){
@@ -134,8 +136,14 @@ public class MyTopbar extends RelativeLayout{
     }
 
     @Override
-    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        initView();
+    }
 
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+//        initView();
     }
 
     public interface topbarClickListener{
