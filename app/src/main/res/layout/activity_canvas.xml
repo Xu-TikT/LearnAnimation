@@ -7,7 +7,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tikt.mathmeetsanimation.ui.customizeView.CanvasActivity">
-<com.tikt.mathmeetsanimation.ui.customizeView.views.CanvasView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+
+
+
+
+    <com.tikt.mathmeetsanimation.ui.customizeView.views.CanvasView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>
