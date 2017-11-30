@@ -6,28 +6,25 @@ import android.widget.Button;
 
 import com.tikt.mathmeetsanimation.R;
 import com.tikt.mathmeetsanimation.base.BaseAppActivity;
-import com.tikt.mathmeetsanimation.ui.customizeView.views.AttrsTopbarActivity;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 学习自定义view的主界面
+ * 学习Canvas
  */
-public class CustomizeViewsActivity extends BaseAppActivity {
+public class CanvasTestActivity extends BaseAppActivity {
 
 
-    @Bind(R.id.id_customizeViews_textview_1_btn)
-    Button idCustomizeViewsTextview1Btn;
-    @Bind(R.id.id_customizeViews_attrsTopbar_1_btn)
-    Button idCustomizeViewsAttrsTopbarBtn;
     @Bind(R.id.id_customizeViews_canvas_btn)
     Button idCustomizeViewsCanvasBtn;
+    @Bind(R.id.id_customizeViews_pie_chart_btn)
+    Button idCustomizeViewsPieChartBtn;
 
     @Override
     protected int getContentViewLayoutID() {
-        return R.layout.activity_customize_views;
+        return R.layout.activity_canvas_test;
     }
 
     @Override
@@ -62,24 +59,15 @@ public class CustomizeViewsActivity extends BaseAppActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.id_customizeViews_textview_1_btn,R.id.id_customizeViews_attrsTopbar_1_btn
-            ,R.id.id_customizeViews_canvas_btn})
+    @OnClick({R.id.id_customizeViews_canvas_btn, R.id.id_customizeViews_pie_chart_btn})
     public void onViewClicked(View view) {
-        switch (view.getId()){
-            case R.id.id_customizeViews_textview_1_btn:
-
-                onStartActivity(TextView_1_Activity.class);
-                break;
-
-            case R.id.id_customizeViews_attrsTopbar_1_btn:
-
-                onStartActivity(AttrsTopbarActivity.class);
-                break;
+        switch (view.getId()) {
             case R.id.id_customizeViews_canvas_btn:
-
-                onStartActivity(CanvasTestActivity.class);
+                onStartActivity(CanvasActivity.class);
+                break;
+            case R.id.id_customizeViews_pie_chart_btn:
+                onStartActivity(Canvas_pie_chartActivity.class);
                 break;
         }
-
     }
 }

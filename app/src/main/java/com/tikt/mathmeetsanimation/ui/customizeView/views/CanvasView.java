@@ -177,5 +177,13 @@ public class CanvasView extends View {
         RectF rectF4 = new RectF(10,600,800,900);
         canvas.drawArc(rectF4,0,90,true,mPaint1);
 
+        //相比于使用椭圆，我们还是使用正圆比较多的
+        RectF rectF5 = new RectF(100,100,600,600);
+        canvas.drawArc(rectF5,0,90,true,mPaint);
+        canvas.drawArc(rectF5,0,90,false,mPaint1);
+
+
+
+
     }
 }

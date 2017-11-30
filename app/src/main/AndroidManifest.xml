@@ -37,7 +37,9 @@
         <activity android:name=".ui.customizeView.CustomizeViewsActivity" />
         <activity android:name=".ui.customizeView.TextView_1_Activity" />
         <activity android:name=".ui.customizeView.views.AttrsTopbarActivity" />
-        <activity android:name=".ui.customizeView.CanvasActivity"></activity>
+        <activity android:name=".ui.customizeView.CanvasActivity" />
+        <activity android:name=".ui.customizeView.Canvas_pie_chartActivity" />
+        <activity android:name=".ui.customizeView.CanvasTestActivity"></activity>
     </application>
 
 </manifest>
