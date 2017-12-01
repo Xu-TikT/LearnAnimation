@@ -21,4 +21,24 @@
         android:text="pie_chart"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/id_customizeViews_Translate_btn"
+        android:text="Canvas_Translate"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/id_customizeViews_Scale_btn"
+        android:text="Canvas_Scale"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/id_customizeViews_Rotate_btn"
+        android:text="Canvas_Rotate"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/id_customizeViews_Skew_btn"
+        android:text="Canvas_Skew"
+        android:layout_height="wrap_content" />
 </LinearLayout>

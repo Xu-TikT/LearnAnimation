@@ -37,9 +37,13 @@
         <activity android:name=".ui.customizeView.CustomizeViewsActivity" />
         <activity android:name=".ui.customizeView.TextView_1_Activity" />
         <activity android:name=".ui.customizeView.views.AttrsTopbarActivity" />
-        <activity android:name=".ui.customizeView.CanvasActivity" />
+        <activity android:name=".ui.customizeView.canvas.CanvasBasicActivity" />
         <activity android:name=".ui.customizeView.Canvas_pie_chartActivity" />
-        <activity android:name=".ui.customizeView.CanvasTestActivity"></activity>
+        <activity android:name=".ui.customizeView.CanvasTestActivity" />
+        <activity android:name=".ui.customizeView.canvas.CanvasTranslateActivity" />
+        <activity android:name=".ui.customizeView.canvas.CanvasScaleActivity" />
+        <activity android:name=".ui.customizeView.canvas.CanvasRotateActivity" />
+        <activity android:name=".ui.customizeView.canvas.CanvasSkewActivity"></activity>
     </application>
 
 </manifest>

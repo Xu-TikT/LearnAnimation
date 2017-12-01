@@ -1,13 +1,17 @@
-package com.tikt.mathmeetsanimation.ui.customizeView;
+package com.tikt.mathmeetsanimation.ui.customizeView.canvas;
 
 import com.tikt.mathmeetsanimation.R;
 import com.tikt.mathmeetsanimation.base.BaseAppActivity;
 
-public class CanvasActivity extends BaseAppActivity {
+/**
+ * 画布旋转
+ */
+public class CanvasRotateActivity extends BaseAppActivity {
+
 
     @Override
     protected int getContentViewLayoutID() {
-        return R.layout.activity_canvas;
+        return R.layout.activity_canvas_rotate;
     }
 
     @Override

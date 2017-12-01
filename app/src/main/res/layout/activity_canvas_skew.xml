@@ -6,13 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tikt.mathmeetsanimation.ui.customizeView.canvas.CanvasBasicActivity">
-
-
-
-
-    <com.tikt.mathmeetsanimation.ui.customizeView.views.CanvasView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
+    tools:context="com.tikt.mathmeetsanimation.ui.customizeView.canvas.CanvasSkewActivity">
+<com.tikt.mathmeetsanimation.ui.customizeView.views.CanvasSkewView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
 </LinearLayout>

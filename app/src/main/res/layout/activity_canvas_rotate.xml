@@ -6,13 +6,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tikt.mathmeetsanimation.ui.customizeView.canvas.CanvasBasicActivity">
+    tools:context="com.tikt.mathmeetsanimation.ui.customizeView.canvas.CanvasRotateActivity">
 
-
-
-
-    <com.tikt.mathmeetsanimation.ui.customizeView.views.CanvasView
+    <com.tikt.mathmeetsanimation.ui.customizeView.views.CanvasRotateView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
 </LinearLayout>
